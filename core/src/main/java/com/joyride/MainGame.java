@@ -15,6 +15,8 @@ public class MainGame extends Game {
 
 	public AssetMan assetManager;
 
+
+	//este metodo crea los assets para que el juego se ejecute
 	@Override
 	public void create(){
 		this.assetManager = new AssetMan();
@@ -22,7 +24,7 @@ public class MainGame extends Game {
 		this.gameScreen = new GameScreen(this);
 		this.getReadyScreen = new getReadyScreen(this);
 		this.gameOverScreen = new GameOverScreen(this);
-
+		
 		setScreen(this.getReadyScreen);
 	}
 }
